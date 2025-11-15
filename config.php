@@ -13,8 +13,5 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 // Opsi 1: Jika menggunakan server lokal biasa
-define('BASE_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/bidan_sunarti');
-
-// Opsi 2: Jika menggunakan virtual host di Laragon
-// define('BASE_URL', 'http://bidan-sunarti.test/');
+define('BASE_URL', 'http://' . $_SERVER['HTTP_HOST']);
 ?>
